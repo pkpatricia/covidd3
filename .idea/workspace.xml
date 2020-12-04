@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbf08d9d-bd2e-4b0a-a979-265fe446e244" name="Default Changelist" comment="" />
+    <list default="true" id="fbf08d9d-bd2e-4b0a-a979-265fe446e244" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,10 +19,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1jIlbOqOxSkzpiVKmct4pEoQYtQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,30 +63,12 @@
       <workItem from="1604524517305" duration="2760000" />
       <workItem from="1604798992890" duration="1223000" />
       <workItem from="1606939556147" duration="9989000" />
-      <workItem from="1607057583685" duration="367000" />
+      <workItem from="1607057583685" duration="513000" />
+      <workItem from="1607060502218" duration="2276000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="465" y="266" key="#Notifications" timestamp="1603501127577">
-      <screen x="0" y="23" width="1440" height="807" />
-    </state>
-    <state x="465" y="266" key="#Notifications/0.23.1440.807/1440.23.1920.1057@0.23.1440.807" timestamp="1603501127577" />
-    <state x="610" y="334" key="#Vim_Emulation" timestamp="1603500278269">
-      <screen x="0" y="23" width="1440" height="807" />
-    </state>
-    <state x="610" y="334" key="#Vim_Emulation/0.23.1440.807@0.23.1440.807" timestamp="1603500278269" />
-    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603504473719">
-      <screen x="0" y="23" width="1440" height="810" />
-    </state>
-    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.807@0.23.1440.807" timestamp="1603500284335" />
-    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.810/1440.23.1920.1057@0.23.1440.810" timestamp="1603504473719" />
-    <state x="80" y="57" width="1204" height="722" key="SettingsEditor" timestamp="1603500409060">
-      <screen x="0" y="23" width="1440" height="807" />
-    </state>
-    <state x="80" y="57" width="1204" height="722" key="SettingsEditor/0.23.1440.807@0.23.1440.807" timestamp="1603500409060" />
   </component>
 </project>
