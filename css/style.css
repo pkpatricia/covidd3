@@ -1,3 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
 svg {
     overflow: visible; /* show axes that extend beyond svg */
     margin-left: 100px; /* move bar to the right to see left axis */
