@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fbf08d9d-bd2e-4b0a-a979-265fe446e244" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1jIlbOqOxSkzpiVKmct4pEoQYtQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.User-Defined File Types" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbf08d9d-bd2e-4b0a-a979-265fe446e244" name="Default Changelist" comment="" />
+      <created>1603499558823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603499558823</updated>
+      <workItem from="1603499560714" duration="1063000" />
+      <workItem from="1603501109988" duration="414000" />
+      <workItem from="1604524517305" duration="2760000" />
+      <workItem from="1604798992890" duration="1223000" />
+      <workItem from="1606939556147" duration="9989000" />
+      <workItem from="1607057583685" duration="367000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="465" y="266" key="#Notifications" timestamp="1603501127577">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="465" y="266" key="#Notifications/0.23.1440.807/1440.23.1920.1057@0.23.1440.807" timestamp="1603501127577" />
+    <state x="610" y="334" key="#Vim_Emulation" timestamp="1603500278269">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="610" y="334" key="#Vim_Emulation/0.23.1440.807@0.23.1440.807" timestamp="1603500278269" />
+    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603504473719">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.807@0.23.1440.807" timestamp="1603500284335" />
+    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.810/1440.23.1920.1057@0.23.1440.810" timestamp="1603504473719" />
+    <state x="80" y="57" width="1204" height="722" key="SettingsEditor" timestamp="1603500409060">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="80" y="57" width="1204" height="722" key="SettingsEditor/0.23.1440.807@0.23.1440.807" timestamp="1603500409060" />
+  </component>
+</project>
