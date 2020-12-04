@@ -23,17 +23,17 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     var yScale = d3.scaleLinear(); //create a linear scale
     yScale.range([HEIGHT, 0]); //set its visual range to 600 -> 0 (remember bottom of svg is 600px down from top)
 
-    var yMin = d3.min(data, function(datum, index){ //get the minimum y data value...
+    var yMin = d3.min(data, function(datum){ //get the minimum y data value...
         return (datum.positive / datum.totalTestResults) * 100; //by looking at the count property of each datum
     })
 
-    var yMax = d3.max(data, function(datum, index){ //get the maximum y data value...
+    var yMax = d3.max(data, function(datum){ //get the maximum y data value...
         return (datum.positive / datum.totalTestResults) * 100; //by looking at the count property of each datum
     })
 
     yScale.domain([yMin-1, yMax]); //set the domain of yScale from yMin and yMax
     d3.selectAll('rect') //find all rectangles
-        .attr('height', function(datum, index){ //set the height of each rectangle...
+        .attr('height', function(datum){ //set the height of each rectangle...
             //...by getting the count property of each datum
             //converting it to a visual value, using yScale
             //(remember, when using yScale as it is set up, a large data value will give you a small visual value and vice versa)
@@ -48,11 +48,11 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
 
     d3.selectAll('rect') //select all rectangles
         .attr('x', function(datum, index){ //set the x position of each rectangle...
-            return xScale(index);//by converting the index of the element in the array to a point between 0->800
+            return xScale(index);//by converting the index of the element in the array to a point between 0->1200
         });
 
     d3.selectAll('rect') //select all rectangles
-        .attr('y', function(datum, index){ //set the y position of each rectangle...
+        .attr('y', function(datum){ //set the y position of each rectangle...
             //by converting the count property of the datum to a visual value
             //(remember, when using yScale as it is set up, a large data value will give you a small visual value and vice versa)
             return yScale((datum.positive / datum.totalTestResults) * 100);
@@ -61,14 +61,14 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     d3.selectAll('rect') //select all rectangles
         .attr('width', WIDTH/data.length); //set the width of all rectangles to be the width of the SVG divided by the number of data elements
 
-    var yDomain = d3.extent(data, function(datum, index){ //set the y domain by getting the min/max with d3.extent
+    var yDomain = d3.extent(data, function(datum){ //set the y domain by getting the min/max with d3.extent
         return (datum.positive / datum.totalTestResults) * 100; //... and examining the count property of each datum
     })
     var colorScale = d3.scaleLinear();//create a linear scale
     colorScale.domain(yDomain) //the domain is the yDomain
     colorScale.range(['#00cc00', 'blue']) //the visual range goes from green->blue
     d3.selectAll('rect') //select all rectangles
-        .attr('fill', function(datum, index){ //set the fill of each rectangle
+        .attr('fill', function(datum){ //set the fill of each rectangle
             return colorScale((datum.positive / datum.totalTestResults) * 100) //by converting the count property of the datum to a color
         })
     var leftAxis = d3.axisLeft(yScale); //create a left axis generator using the yScale
