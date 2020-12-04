@@ -64,7 +64,7 @@
       <workItem from="1604798992890" duration="1223000" />
       <workItem from="1606939556147" duration="9989000" />
       <workItem from="1607057583685" duration="513000" />
-      <workItem from="1607060502218" duration="2862000" />
+      <workItem from="1607060502218" duration="3655000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1607073552786</created>
@@ -73,14 +73,33 @@
       <option name="project" value="LOCAL" />
       <updated>1607073552786</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated index">
+      <created>1607074384892</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607074384892</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="updated index" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated index" />
   </component>
 </project>

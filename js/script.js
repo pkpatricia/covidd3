@@ -31,7 +31,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
         return (datum.positive / datum.totalTestResults) * 100; //by looking at the count property of each datum
     })
 
-    yScale.domain([yMin-1, yMax]); //set the domain of yScale from yMin and yMax
+    yScale.domain([yMin, yMax]); //set the domain of yScale from yMin and yMax
     d3.selectAll('rect') //find all rectangles
         .attr('height', function(datum){ //set the height of each rectangle...
             //...by getting the count property of each datum
