@@ -28,6 +28,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     })
 
     var yMax = d3.max(data, function(datum){ //get the maximum y data value...
+        console.log((datum.positive / datum.totalTestResults) * 100);
         return (datum.positive / datum.totalTestResults) * 100; //by looking at the count property of each datum
     })
 
@@ -66,7 +67,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     })
     var colorScale = d3.scaleLinear();//create a linear scale
     colorScale.domain(yDomain) //the domain is the yDomain
-    colorScale.range(['#00cc00', 'blue']) //the visual range goes from green->blue
+    colorScale.range(['#FF69B4', '#55002A']) //the visual range
     d3.selectAll('rect') //select all rectangles
         .attr('fill', function(datum){ //set the fill of each rectangle
             return colorScale((datum.positive / datum.totalTestResults) * 100) //by converting the count property of the datum to a color
