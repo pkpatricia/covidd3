@@ -76,13 +76,14 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     d3.select('svg') //select the svg
         .append('g').attr('id', 'left-axis') //append a <g> tag to it with id=left-axis
         .call(leftAxis); // create a left axis within that <g>
-    var skillScale = d3.scaleBand(); //create a scale band that will map skills to horizontal positions
-    var skillDomain = data.map(function(location){ //create an array of skill strings
+    var stateScale = d3.scaleBand(); //create a scale band that will map states to horizontal positions
+    var stateDomain = data.map(function(location){ //create an array of state strings
+        console.log(location.state);
         return location.state
     });
-    skillScale.range([0, WIDTH]); //set the range of the skillScale to 0->1200
-    skillScale.domain(skillDomain); //set the domain to be the array of skill strings
-    var bottomAxis = d3.axisBottom(skillScale); //create a bottom axis generator that uses the skillScale
+    stateScale.range([0, WIDTH]); //set the range of the stateScale to 0->1200
+    stateScale.domain(stateDomain); //set the domain to be the array of state strings
+    var bottomAxis = d3.axisBottom(stateScale); //create a bottom axis generator that uses the stateScale
     d3.select('svg') //select the svg
         .append('g').attr('id', 'bottom-axis') //append a <g> tag to it with id=bottom-axis
         .call(bottomAxis) // create a bottom axis within that <g>
