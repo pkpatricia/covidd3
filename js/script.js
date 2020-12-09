@@ -10,9 +10,7 @@ d3.select('svg')
 d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(data) {
 
     // Sort the Data from Largest to Smallest
-    data.sort(function(a, b) {
-        return ( ((b.positive / b.totalTestResults) * 100 ) - ((a.positive / a.totalTestResults) * 100 ) )
-    });
+    data.sort((a, b) => ((b.positive / b.totalTestResults) * 100) - ((a.positive / a.totalTestResults) * 100));
 
     d3.select('svg')
         .selectAll('rect')
@@ -28,7 +26,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     })
 
     var yMax = d3.max(data, function(datum){ //get the maximum y data value...
-        console.log((datum.positive / datum.totalTestResults) * 100);
+        console.log(((datum.positive / datum.totalTestResults) * 100).toPrecision(3));
         return (datum.positive / datum.totalTestResults) * 100; //by looking at the count property of each datum
     })
 
