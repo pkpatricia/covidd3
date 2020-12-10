@@ -1,5 +1,10 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    margin: 0 auto !important;
+    font-size:17px !important;
+    font-family:'Roboto', sans-serif !important;
+    background-color: white !important;
+    color:#000;
+    min-width: 100% !important;
 }
 
 .head {
@@ -7,7 +12,8 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: -9px;
-    max-width: 100%;
+    min-width: 100% !important;
+
 }
 
 h1, h2 {

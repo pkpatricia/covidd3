@@ -85,6 +85,8 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
         .attr('fill', function(datum){ //set the fill of each rectangle
             return colorScale((datum.positive / datum.totalTestResults) * 100) //by converting the count property of the datum to a color
         })
+
+
     var leftAxis = d3.axisLeft(yScale); //create a left axis generator using the yScale
     d3.select('svg') //select the svg
         .append('g').attr('id', 'left-axis') //append a <g> tag to it with id=left-axis
