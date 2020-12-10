@@ -1,5 +1,5 @@
 const WIDTH = 1200;
-const HEIGHT = 600;
+const HEIGHT = 800;
 const myTable = d3.select("myTable");
 
 
