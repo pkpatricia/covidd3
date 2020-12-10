@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
 svg {
     overflow: visible; /* show axes that extend beyond svg */
     margin-left: 100px; /* move bar to the right to see left axis */

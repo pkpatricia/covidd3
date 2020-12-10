@@ -1,5 +1,7 @@
 const WIDTH = 1200;
 const HEIGHT = 600;
+const myTable = d3.select("myTable");
+
 
 // set width and height of svg
 d3.select('svg')
@@ -11,6 +13,15 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
 
     // Sort the Data from Largest to Smallest
     data.sort((a, b) => ((b.positive / b.totalTestResults) * 100) - ((a.positive / a.totalTestResults) * 100));
+
+    data.forEach(myTable);
+
+    function myTable(item, index) {
+        document.getElementById("myTable").innerHTML += "<tr>" +
+            "<td>"+(index+1)+"</td>" + "<td>" + (item.state) + "</td>" +
+            "<td>" + ((item.positive / item.totalTestResults) * 100).toPrecision(3) +  "</td>" +
+            "</tr>";
+    }
 
     d3.select('svg')
         .selectAll('rect')
