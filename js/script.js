@@ -34,7 +34,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
         .append("rect");
 
     var yScale = d3.scaleLinear(); //create a linear scale
-    yScale.range([HEIGHT, 0]); //set its visual range to 600 -> 0 (remember bottom of svg is 600px down from top)
+    yScale.range([HEIGHT, 0]); //set its visual range to 800 -> 0 (remember bottom of svg is 800px down from top)
 
     var yMin = d3.min(data, function(datum){ //get the minimum y data value...
         return (datum.positive / datum.totalTestResults) * 100; //by looking at the count property of each datum
