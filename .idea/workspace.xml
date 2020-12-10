@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbf08d9d-bd2e-4b0a-a979-265fe446e244" name="Default Changelist" comment="" />
+    <list default="true" id="fbf08d9d-bd2e-4b0a-a979-265fe446e244" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +99,7 @@
       <workItem from="1607060502218" duration="6518000" />
       <workItem from="1607394329697" duration="1924000" />
       <workItem from="1607482267503" duration="11280000" />
-      <workItem from="1607565965149" duration="1309000" />
+      <workItem from="1607565965149" duration="1407000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1607073552786</created>
@@ -237,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607567239882</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added Colors">
+      <created>1607567304118</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607567304118</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

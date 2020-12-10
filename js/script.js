@@ -20,10 +20,9 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
         document.getElementById("myTable").innerHTML += "<tr>" +
             "<td>"+(index+1)+"</td>" +
             "<td>" + (item.state) + "</td>" +
+            "<td>" + ((item.positive / item.totalTestResults) * 100).toPrecision(3) +  "</td>" +
             "<td>" + (item.hospitalized) + "</td>" +
             "<td>" + (item.death) + "</td>" +
-
-            "<td>" + ((item.positive / item.totalTestResults) * 100).toPrecision(3) +  "</td>" +
             "<td>" + (item.dateChecked) + "</td>" +
             "</tr>";
     }
