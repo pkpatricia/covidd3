@@ -1,6 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.head {
+    background-color: lavender;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -9px;
+    width: 100%;
+
+}
 
 h1, h2 {
     text-align: center;
