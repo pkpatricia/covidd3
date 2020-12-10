@@ -11,6 +11,11 @@ table, th, td {
     text-align: center;
 }
 
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 svg {
     overflow: visible; /* show axes that extend beyond svg */
     margin-left: 100px; /* move bar to the right to see left axis */
