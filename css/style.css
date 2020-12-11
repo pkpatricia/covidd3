@@ -51,7 +51,8 @@ rect {
     text-anchor: start; /* point of rotation should be beginning of text, not middle */
 }
 
-@media screen and (max-width: 920px) {
+/* Hide SVG BarChart on Screens Smaller than 1200 */
+@media screen and (max-width: 1199px) {
     #svgHidden {
         display: none;
     }
