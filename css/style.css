@@ -13,7 +13,12 @@ body {
     padding-bottom: 50px;
     margin-top: -9px;
     min-width: 100% !important;
+}
 
+img {
+    width: 300px;
+    height: 300px;
+    padding-left: 150px;
 }
 
 h1, h2 {
@@ -44,4 +49,10 @@ rect {
 #bottom-axis text {
     transform:rotate(45deg); /* rotate bottom axis text so it's visible */
     text-anchor: start; /* point of rotation should be beginning of text, not middle */
+}
+
+@media screen and (max-width: 920px) {
+    #svgHidden {
+        display: none;
+    }
 }
