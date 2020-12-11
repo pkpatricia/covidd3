@@ -37,8 +37,8 @@ table.center {
 
 svg {
     overflow: visible; /* show axes that extend beyond svg */
-    margin-left: 100px; /* move bar to the right to see left axis */
-    margin-bottom: 100px;
+    margin-left: 150px; /* move bar to the right to see left axis */
+    margin-bottom: 150px;
 }
 
 rect {
