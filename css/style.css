@@ -18,7 +18,7 @@ body {
 img {
     width: 300px;
     height: 300px;
-    padding-left: 150px;
+    padding-left: 50px;
 }
 
 h1, h2 {
@@ -52,7 +52,7 @@ rect {
 }
 
 /* Hide SVG BarChart on Screens Smaller than 1200 */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1300px) {
     #svgHidden {
         display: none;
     }
