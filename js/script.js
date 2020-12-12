@@ -18,6 +18,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     // Sort the Data from Largest to Smallest
     data.sort((a, b) => ((b.positive / b.totalTestResults) * 100) - ((a.positive / a.totalTestResults) * 100));
 
+
     // Create Table From Sorted Data with Selected Fields
     data.forEach(myTable);
 
@@ -26,7 +27,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
             "<td>"+(index+1)+"</td>" +
             "<td>" + (item.state) + "</td>" +
             "<td>" + ((item.positive / item.totalTestResults) * 100).toPrecision(3) +  "</td>" +
-            "<td>" + (item.hospitalized) + "</td>" +
+            "<td>" + (((item.hospitalized) == null) ? "N/A": (item.hospitalized)) + "</td>" +
             "<td>" + (item.death) + "</td>" +
             "<td>" + strictIsoParse(item.dateChecked) + "</td>" +
             "</tr>";
