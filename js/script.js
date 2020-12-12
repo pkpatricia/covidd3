@@ -46,7 +46,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     })
 
     var yMax = d3.max(data, function(datum){ //get the maximum y data value...
-        console.log(((datum.positive / datum.totalTestResults) * 100).toPrecision(3));
+        // console.log(((datum.positive / datum.totalTestResults) * 100).toPrecision(3));
         return (datum.positive / datum.totalTestResults) * 100; //by looking at the count property of each datum
     })
 
@@ -98,7 +98,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
         .call(leftAxis); // create a left axis within that <g>
     var stateScale = d3.scaleBand(); //create a scale band that will map states to horizontal positions
     var stateDomain = data.map(function(location){ //create an array of state strings
-        console.log(location.state);
+        // console.log(location.state);
         return location.state
     });
     stateScale.range([0, WIDTH]); //set the range of the stateScale to 0->1200
