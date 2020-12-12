@@ -1,5 +1,9 @@
 const WIDTH = 1200;
 const HEIGHT = 800;
+
+// parse the date / time
+var strictIsoParse = d3.utcParse("%Y-%m-%dT%H:%M:%SZ");
+
 const myTable = d3.select("myTable");
 
 
@@ -8,12 +12,13 @@ d3.select('svg')
     .style('width', WIDTH)
     .style('height', HEIGHT);
 
-// Get the data
+// Get the data from the API
 d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(data) {
 
     // Sort the Data from Largest to Smallest
     data.sort((a, b) => ((b.positive / b.totalTestResults) * 100) - ((a.positive / a.totalTestResults) * 100));
 
+    // Create Table From Sorted Data with Selected Fields
     data.forEach(myTable);
 
     function myTable(item, index) {
@@ -23,7 +28,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
             "<td>" + ((item.positive / item.totalTestResults) * 100).toPrecision(3) +  "</td>" +
             "<td>" + (item.hospitalized) + "</td>" +
             "<td>" + (item.death) + "</td>" +
-            "<td>" + (item.dateChecked) + "</td>" +
+            "<td>" + strictIsoParse(item.dateChecked) + "</td>" +
             "</tr>";
     }
 
