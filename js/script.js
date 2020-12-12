@@ -27,7 +27,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
             "<td>"+(index+1)+"</td>" +
             "<td>" + (item.state) + "</td>" +
             "<td>" + ((item.positive / item.totalTestResults) * 100).toPrecision(3) +  "</td>" +
-            "<td>" + (((item.hospitalized) == null) ? "Unknown": (item.hospitalized)) + "</td>" +
+            "<td>" + (((item.hospitalized) == null) ? "Not Reported": (item.hospitalized)) + "</td>" +
             "<td>" + (item.death) + "</td>" +
             "<td>" + strictIsoParse(item.dateChecked) + "</td>" +
             "</tr>";
@@ -90,7 +90,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     d3.selectAll('rect') //select all rectangles
         .attr('fill', function(datum){ //set the fill of each rectangle
             return colorScale((datum.positive / datum.totalTestResults) * 100) //by converting the count property of the datum to a color
-        })
+        });
 
 
     var leftAxis = d3.axisLeft(yScale); //create a left axis generator using the yScale
