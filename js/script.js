@@ -29,7 +29,8 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
             "<td>" + ((item.positive / item.totalTestResults) * 100).toPrecision(3) +  "</td>" +
             "<td>" + (((item.hospitalized) == null) ? "Not Reported": (item.hospitalized)) + "</td>" +
             "<td>" + (item.death) + "</td>" +
-            "<td>" + strictIsoParse(item.dateChecked) + "</td>" +
+            "<td>" + ((strictIsoParse(item.dateChecked) == null) ? "Not Reported": (strictIsoParse(item.dateChecked))) + "</td>" +
+            "<td>" + ((item.lastUpdateEt == null) ? "Not Reported": (item.lastUpdateEt)) + "</td>" +
             "</tr>";
     }
 
