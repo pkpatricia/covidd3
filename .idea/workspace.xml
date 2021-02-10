@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbf08d9d-bd2e-4b0a-a979-265fe446e244" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
       <workItem from="1607741506499" duration="918000" />
       <workItem from="1608407045266" duration="466000" />
       <workItem from="1608745374647" duration="1761000" />
-      <workItem from="1612936658549" duration="9085000" />
+      <workItem from="1612936658549" duration="9331000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1607073552786</created>
@@ -407,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612949944629</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Added Axes Labels">
+      <created>1612950022526</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1612950022526</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
