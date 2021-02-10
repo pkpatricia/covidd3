@@ -1,5 +1,9 @@
 const WIDTH = 1200;
 const HEIGHT = 800;
+const MARGIN = 20;
+const LABELAREA = 110;
+const TPADBOT = 40;
+const TPADLEFT = 40;
 
 // parse the date / time
 var strictIsoParse = d3.utcParse("%Y-%m-%dT%H:%M:%SZ");
@@ -29,7 +33,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
             "<td>" + ((item.positive / item.totalTestResults) * 100).toPrecision(3) +  "</td>" +
             "<td>" + (((item.hospitalized) == null) ? "Not Reported": (item.hospitalized)) + "</td>" +
             "<td>" + (item.death) + "</td>" +
-            "<td>" + ((strictIsoParse(item.dateChecked) == null) ? "Not Reported": (strictIsoParse(item.dateChecked))) + "</td>" +
+            //"<td>" + ((strictIsoParse(item.dateChecked) == null) ? "Not Reported": (strictIsoParse(item.dateChecked))) + "</td>" +
             "<td>" + ((item.lastUpdateEt == null) ? "Not Reported": (item.lastUpdateEt)) + "</td>" +
             "</tr>";
     }
@@ -68,6 +72,7 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     xScale.domain([0, data.length]); //set the domain from 0 to the number of data elements retrieved
 
     d3.selectAll('rect') //select all rectangles
+        
         .attr('x', function(datum, index){ //set the x position of each rectangle...
             return xScale(index);//by converting the index of the element in the array to a point between 0->1200
         });
@@ -93,11 +98,28 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
             return colorScale((datum.positive / datum.totalTestResults) * 100) //by converting the count property of the datum to a color
         });
 
-
+    // Create the Y Axis
     var leftAxis = d3.axisLeft(yScale); //create a left axis generator using the yScale
     d3.select('svg') //select the svg
         .append('g').attr('id', 'left-axis') //append a <g> tag to it with id=left-axis
-        .call(leftAxis); // create a left axis within that <g>
+      
+        .call(leftAxis) // create a left axis within that <g>
+        
+    
+    d3.select('svg')
+      .append("g").attr("class", "yText")
+      .attr(
+        'transform',
+        'translate(-70,'+(HEIGHT/2)+')rotate(-90)')
+    var yText = d3.select(".yText")
+    yText
+      .append("text")
+      .text("Percentage %")
+      .attr("font-size", "20px")
+      .attr("font-family", 'Roboto')
+      .attr("font-weight", "800")
+    
+    // Create the X Axis
     var stateScale = d3.scaleBand(); //create a scale band that will map states to horizontal positions
     var stateDomain = data.map(function(location){ //create an array of state strings
         // console.log(location.state);
@@ -109,7 +131,22 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
     d3.select('svg') //select the svg
         .append('g').attr('id', 'bottom-axis') //append a <g> tag to it with id=bottom-axis
         .call(bottomAxis) // create a bottom axis within that <g>
-        .attr('transform', 'translate(0,'+HEIGHT+')'); //move it to the bottom of the svg
+        .attr('transform', 'translate(0,'+HEIGHT+')')
+      
+      
+    d3.select('svg')
+        .append("g").attr("class", "xText")
+        .attr('transform', 'translate(525,'+(HEIGHT + 60)+')')
+        var xText = d3.select(".xText")
+    xText
+        .append("text")
+        .text("State Name (Initials)")
+        .attr("font-size", "18px")
+        .attr("font-family", 'Roboto')
+        .attr("font-weight", "800")
+    
+    
+    
 
 });
 

@@ -18,7 +18,7 @@ body {
 img {
     width: 300px;
     height: 300px;
-    padding-left: 50px;
+    padding-left: 115px;
 }
 
 h1, h2 {
@@ -37,7 +37,7 @@ table.center {
 
 svg {
     overflow: visible; /* show axes that extend beyond svg */
-    margin-left: 100px; /* move bar to the right to see left axis */
+    margin-left: 130px; /* move bar to the right to see left axis */
     margin-bottom: 100px;
 }
 
