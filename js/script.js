@@ -110,11 +110,11 @@ d3.json("https://api.covidtracking.com/v1/states/current.json").then(function(da
       .append("g").attr("class", "yText")
       .attr(
         'transform',
-        'translate(-70,'+(HEIGHT/2)+')rotate(-90)')
+        'translate(-50,'+(HEIGHT/2)+')rotate(-90)')
     var yText = d3.select(".yText")
     yText
       .append("text")
-      .text("Percentage %")
+      .text("Percentage (%)")
       .attr("font-size", "20px")
       .attr("font-family", 'Roboto')
       .attr("font-weight", "800")
